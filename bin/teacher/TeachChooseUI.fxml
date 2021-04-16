@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="568.0" prefWidth="897.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="teacher.TCController">
+   <children>
+      <Label layoutX="22.0" layoutY="22.0" text="欢迎您，">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Button fx:id="logoutbutton" layoutX="816.0" layoutY="18.0" mnemonicParsing="false" onAction="#LogOut" text="注销">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Label fx:id="namelabel" layoutX="100.0" layoutY="22.0" text="Label">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Button fx:id="kaoqinbutton" layoutX="308.0" layoutY="126.0" mnemonicParsing="false" onAction="#LoadRoutine" prefHeight="87.0" prefWidth="281.0" text="考勤管理">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="totalbutton" layoutX="308.0" layoutY="222.0" mnemonicParsing="false" onAction="#LoadTotal" prefHeight="87.0" prefWidth="281.0" text="学期统计">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="changepwd" layoutX="780.0" layoutY="60.0" mnemonicParsing="false" onAction="#Changepwd" text="修改密码">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="qingjiabutton" layoutX="308.0" layoutY="320.0" mnemonicParsing="false" onAction="#Qingjia" prefHeight="87.0" prefWidth="281.0" text="学生请假审核">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="image" fitHeight="38.0" fitWidth="43.0" layoutX="22.0" layoutY="504.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@notification.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="qingjia" layoutX="72.0" layoutY="513.0" text="Label">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

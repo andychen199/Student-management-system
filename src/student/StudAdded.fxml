@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="463.0" prefWidth="387.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="student.SAController">
+   <children>
+      <Label layoutX="31.0" layoutY="32.0" text="已选课程">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <ListView fx:id="list" layoutX="31.0" layoutY="82.0" prefHeight="275.0" prefWidth="320.0" />
+      <Button fx:id="delete" layoutX="159.0" layoutY="400.0" mnemonicParsing="false" onAction="#Delete" text="退选">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

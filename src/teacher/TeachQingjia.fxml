@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="652.0" prefWidth="725.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="teacher.TQController">
+   <top>
+      <Pane prefHeight="99.0" prefWidth="890.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="reload" layoutX="631.0" layoutY="31.0" mnemonicParsing="false" onAction="#ReloadList" text="刷新">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+            <Label layoutX="30.0" layoutY="31.0" text="学生请假审核">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+         </children></Pane>
+   </top>
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="label1" layoutX="47.0" layoutY="45.0" text="学号">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="label4" layoutX="47.0" layoutY="150.0" text="课程号">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="label5" layoutX="47.0" layoutY="185.0" text="课程名">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="label2" layoutX="47.0" layoutY="80.0" text="班级">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="label3" layoutX="48.0" layoutY="115.0" text="姓名">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="label6" layoutX="48.0" layoutY="220.0" text="申请时间">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="label7" layoutX="47.0" layoutY="255.0" text="请假时间">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="label8" layoutX="48.0" layoutY="290.0" text="请假理由">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="reason1" layoutX="143.0" layoutY="290.0" prefHeight="171.0" prefWidth="301.0" />
+            <Button fx:id="accept" layoutX="168.0" layoutY="488.0" mnemonicParsing="false" onAction="#Accept" text="批准">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+            <Button fx:id="inject" layoutX="273.0" layoutY="488.0" mnemonicParsing="false" onAction="#Inject" text="拒绝">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+            <Label fx:id="label9" layoutX="258.0" layoutY="255.0" text="~">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="id" layoutX="143.0" layoutY="45.0" text="init">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="classname" layoutX="143.0" layoutY="80.0" text="init">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="name" layoutX="143.0" layoutY="115.0" text="init">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="courseid" layoutX="143.0" layoutY="150.0" text="init">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="coursename" layoutX="143.0" layoutY="185.0" text="init">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="applytime" layoutX="143.0" layoutY="220.0" text="init">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="startdate" layoutX="143.0" layoutY="255.0" text="2020-01-01">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="enddate" layoutX="286.0" layoutY="255.0" text="2020-04-01">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </center>
+   <left>
+      <VBox prefHeight="553.0" prefWidth="177.0" BorderPane.alignment="CENTER">
+         <children>
+            <ComboBox fx:id="ifaccept" prefHeight="62.0" prefWidth="177.0" />
+            <ListView fx:id="list" prefHeight="544.0" prefWidth="177.0" />
+         </children>
+      </VBox>
+   </left>
+</BorderPane>

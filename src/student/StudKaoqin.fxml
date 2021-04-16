@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="569.0" prefWidth="1004.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="student.SKController">
+   <children>
+      <Label layoutX="41.0" layoutY="37.0" text="考勤统计">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="69.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="70.0" layoutY="190.0" text="出勤次数">
+         <font>
+            <Font name="Microsoft JhengHei UI Bold" size="32.0" />
+         </font></Label>
+      <ComboBox fx:id="term" layoutX="220.0" layoutY="37.0" prefHeight="45.0" prefWidth="445.0" promptText="选择学期" />
+      <ComboBox fx:id="coursename" layoutX="676.0" layoutY="37.0" prefHeight="45.0" prefWidth="194.0" promptText="课程名" />
+      <Label layoutX="70.0" layoutY="389.0" text="早退次数">
+         <font>
+            <Font name="Microsoft JhengHei UI Bold" size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="369.0" layoutY="190.0" text="请假次数">
+         <font>
+            <Font name="Microsoft JhengHei UI Bold" size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="369.0" layoutY="389.0" text="迟到次数">
+         <font>
+            <Font name="Microsoft JhengHei UI Bold" size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="662.0" layoutY="190.0" text="旷课次数">
+         <font>
+            <Font name="Microsoft JhengHei UI Bold" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="chuqin" layoutX="226.0" layoutY="176.0" prefHeight="71.0" prefWidth="69.0" text="null">
+         <font>
+            <Font name="Microsoft JhengHei UI Bold" size="54.0" />
+         </font>
+      </Label>
+      <Label fx:id="qingjia" layoutX="520.0" layoutY="176.0" prefHeight="71.0" prefWidth="69.0" text="null">
+         <font>
+            <Font name="Microsoft JhengHei UI Bold" size="54.0" />
+         </font>
+      </Label>
+      <Label fx:id="kuangke" layoutX="815.0" layoutY="176.0" prefHeight="71.0" prefWidth="69.0" text="null">
+         <font>
+            <Font name="Microsoft JhengHei UI Bold" size="54.0" />
+         </font>
+      </Label>
+      <Label fx:id="zaotui" layoutX="226.0" layoutY="375.0" prefHeight="71.0" prefWidth="69.0" text="null">
+         <font>
+            <Font name="Microsoft JhengHei UI Bold" size="54.0" />
+         </font>
+      </Label>
+      <Label fx:id="chidao" layoutX="520.0" layoutY="375.0" prefHeight="71.0" prefWidth="69.0" text="null">
+         <font>
+            <Font name="Microsoft JhengHei UI Bold" size="54.0" />
+         </font>
+      </Label>
+      <Button fx:id="confirm" layoutX="884.0" layoutY="39.0" mnemonicParsing="false" onAction="#Confirm" prefHeight="42.0" prefWidth="82.0" text="确定">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

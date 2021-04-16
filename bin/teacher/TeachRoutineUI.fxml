@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="586.0" prefWidth="1158.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="teacher.TRController">
+   <center>
+      <TableView fx:id="tablecombo" prefHeight="370.0" prefWidth="901.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="classid" prefWidth="107.0" text="班级" />
+          <TableColumn fx:id="id" prefWidth="163.0" text="学号" />
+            <TableColumn fx:id="name" prefWidth="117.0" text="姓名" />
+            <TableColumn fx:id="courseid" prefWidth="117.0" text="课程号" />
+            <TableColumn fx:id="coursename" prefWidth="353.0" text="课程名" />
+            <TableColumn fx:id="date" minWidth="0.0" prefWidth="171.0" text="日期" />
+            <TableColumn fx:id="situation" maxWidth="129.0" prefWidth="125.0" text="出勤情况" />
+        </columns>
+      </TableView>
+   </center>
+   <bottom>
+      <Pane prefHeight="64.0" prefWidth="866.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="savebutton" layoutX="392.0" layoutY="13.0" mnemonicParsing="false" onAction="#save" text="删除所选行">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+            <Label fx:id="totallabel" layoutX="21.0" layoutY="20.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="deleteall" layoutX="650.0" layoutY="13.0" mnemonicParsing="false" onAction="#DeleteAll" text="删除所有行">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </bottom>
+   <top>
+      <Pane prefHeight="78.0" prefWidth="901.0" BorderPane.alignment="CENTER">
+         <children>
+            <DatePicker fx:id="datecombo" layoutX="645.0" layoutY="16.0" prefHeight="46.0" prefWidth="204.0" />
+            <ComboBox fx:id="coursecombo" layoutX="425.0" layoutY="20.0" prefHeight="37.0" prefWidth="201.0" promptText="课程名" />
+            <ComboBox fx:id="classcombo" layoutX="21.0" layoutY="20.0" prefHeight="37.0" prefWidth="125.0" promptText="班级" />
+            <ComboBox fx:id="findchoose" layoutX="956.0" layoutY="19.0" prefHeight="39.0" prefWidth="102.0" />
+            <RadioButton fx:id="findcheck" layoutX="886.0" layoutY="14.0" mnemonicParsing="false" text="查询">
+               <toggleGroup>
+                  <ToggleGroup fx:id="group" />
+               </toggleGroup></RadioButton>
+            <RadioButton fx:id="insertcheck" layoutX="886.0" layoutY="43.0" mnemonicParsing="false" text="插入" toggleGroup="$group" />
+            <Button fx:id="loadbutton" layoutX="1077.0" layoutY="21.0" mnemonicParsing="false" onAction="#Load" text="加载">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <ComboBox fx:id="namecombo" layoutX="167.0" layoutY="20.0" prefHeight="37.0" prefWidth="237.0" promptText="姓名" />
+         </children>
+      </Pane>
+   </top>
+</BorderPane>

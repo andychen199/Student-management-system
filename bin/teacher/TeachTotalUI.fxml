@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="727.0" prefWidth="1424.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="teacher.TTController">
+   <top>
+      <Pane prefHeight="146.0" prefWidth="1283.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="addbutton" layoutX="885.0" layoutY="54.0" mnemonicParsing="false" onAction="#Add" prefHeight="39.0" prefWidth="162.0" text="导入（按学生）">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+            <Button fx:id="addallbutton" layoutX="1066.0" layoutY="54.0" mnemonicParsing="false" onAction="#AddAll" prefHeight="39.0" prefWidth="239.0" text="导入本学期所教班级考勤">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+            <ComboBox layoutX="27.0" layoutY="21.0" prefHeight="45.0" prefWidth="445.0" promptText="选择学期" fx:id="xueqicombo" />
+            <ComboBox fx:id="namecombo" layoutX="382.0" layoutY="81.0" prefHeight="43.0" prefWidth="239.0" promptText="姓名" />
+            <ComboBox fx:id="classcombo" layoutX="496.0" layoutY="21.0" prefHeight="44.0" prefWidth="125.0" promptText="选择班级" />
+            <ComboBox fx:id="coursenamecombo" layoutX="27.0" layoutY="81.0" prefHeight="43.0" prefWidth="334.0" promptText="选择课程" />
+            <Button fx:id="addbutton1" layoutX="703.0" layoutY="54.0" mnemonicParsing="false" onAction="#Load" prefHeight="39.0" prefWidth="162.0" text="按学期载入考勤">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+         </children></Pane>
+   </top>
+   <center>
+      
+   </center>
+   <center>
+      <TableView fx:id="table" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="classname" prefWidth="101.0" text="班级名" />
+          <TableColumn fx:id="id" prefWidth="144.0" text="学号" />
+            <TableColumn fx:id="name" prefWidth="104.0" text="姓名" />
+            <TableColumn fx:id="term" prefWidth="248.0" text="学期时间" />
+            <TableColumn fx:id="courseid" minWidth="0.0" prefWidth="151.0" text="课程号" />
+            <TableColumn fx:id="coursename" prefWidth="324.0" text="课程名" />
+            <TableColumn fx:id="Qan" prefWidth="69.0" text="出勤次数" />
+            <TableColumn fx:id="Qaln" minWidth="0.0" prefWidth="68.0" text="请假次数" />
+            <TableColumn fx:id="Qtn" prefWidth="73.0" text="旷课次数" />
+            <TableColumn fx:id="Qlen" prefWidth="68.0" text="早退次数" />
+            <TableColumn fx:id="Qlate" prefWidth="69.0" text="迟到次数" />
+        </columns>
+      </TableView>
+   </center>
+</BorderPane>

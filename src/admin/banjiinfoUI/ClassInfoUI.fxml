@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="508.0" prefWidth="733.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admin.banjiinfoUI.CIController">
+   <children>
+      <Label layoutX="39.0" layoutY="38.0" text="班级信息管理">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <ListView fx:id="list" layoutX="39.0" layoutY="115.0" prefHeight="339.0" prefWidth="194.0" />
+      <Label fx:id="label1" layoutX="294.0" layoutY="126.0" text="班级号">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="label2" layoutX="294.0" layoutY="178.0" text="班级名">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="label3" layoutX="275.0" layoutY="230.0" text="班级人数">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="label4" layoutX="275.0" layoutY="280.0" text="所属院系">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="image" fitHeight="30.0" fitWidth="29.0" layoutX="605.0" layoutY="281.0" onMouseClicked="#yunxing" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@setting.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="classidtext" layoutX="390.0" layoutY="126.0" />
+      <TextField fx:id="classnametext" layoutX="390.0" layoutY="178.0" />
+      <TextField fx:id="classnumbertext" layoutX="390.0" layoutY="230.0" />
+      <ComboBox layoutX="390.0" layoutY="280.0" prefHeight="30.0" prefWidth="201.0" fx:id="xueyuantext" />
+      <ImageView fitHeight="50.0" fitWidth="54.0" layoutX="216.0" layoutY="31.0" onMouseClicked="#Reload" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@refresh.png" />
+         </image></ImageView>
+      <ImageView fitHeight="62.0" fitWidth="62.0" layoutX="634.0" layoutY="24.0" onMouseClicked="#AddClass" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@add.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="comfirm" fitHeight="50.0" fitWidth="50.0" layoutX="580.0" layoutY="31.0" onMouseClicked="#Save" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@check.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="closebutton" fitHeight="50.0" fitWidth="50.0" layoutX="519.0" layoutY="31.0" onMouseClicked="#Close" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@close.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

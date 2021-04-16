@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="261.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Login.ChangeAdminpwd">
+   <children>
+      <Button fx:id="confirmButton" layoutX="128.0" layoutY="182.0" mnemonicParsing="false" onAction="#confirm" text="确定">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="57.0" layoutY="56.0" text="请输入新密码">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="pwdField" layoutX="57.0" layoutY="111.0" />
+   </children>
+</Pane>

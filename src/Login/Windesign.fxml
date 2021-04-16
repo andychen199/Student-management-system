@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="957.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Login.WindowUI">
+   <children>
+      <Button layoutX="107.0" layoutY="155.0" mnemonicParsing="false" onAction="#Student" prefHeight="61.0" prefWidth="225.0" text="学生">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="363.0" layoutY="155.0" mnemonicParsing="false" onAction="#Teacher" prefHeight="61.0" prefWidth="225.0" text="教师">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="107.0" layoutY="282.0" mnemonicParsing="false" onAction="#classmessage" prefHeight="61.0" prefWidth="225.0" text="课程信息">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Label layoutX="38.0" layoutY="27.0" text="欢迎您，Admin" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="90.0" layoutY="14.0">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Button layoutX="797.0" layoutY="69.0" mnemonicParsing="false" onAction="#changepwd" prefHeight="34.0" prefWidth="139.0" text="修改管理员密码">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="teachinfobutton" layoutX="363.0" layoutY="282.0" mnemonicParsing="false" onAction="#TeachUI" prefHeight="61.0" prefWidth="225.0" text="任课信息管理">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="616.0" layoutY="155.0" mnemonicParsing="false" onAction="#XueqiUI" prefHeight="61.0" prefWidth="225.0" text="学期信息管理" fx:id="xueqinfobutton">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="logout" layoutX="871.0" layoutY="22.0" mnemonicParsing="false" onAction="#Logout" prefHeight="34.0" prefWidth="65.0" text="注销">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="classinfobutton" layoutX="616.0" layoutY="282.0" mnemonicParsing="false" onAction="#banjiUI" prefHeight="61.0" prefWidth="225.0" text="班级管理">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

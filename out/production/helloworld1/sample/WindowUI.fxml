@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="305.0" prefWidth="441.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.WindowUI">
+   <children>
+      <Button contentDisplay="BOTTOM" layoutX="305.0" layoutY="138.0" mnemonicParsing="false" onAction="#classmessage" text="课程信息" />
+      <Button layoutX="196.0" layoutY="138.0" mnemonicParsing="false" onAction="#Teacher" text="教师" />
+      <Button layoutX="80.0" layoutY="138.0" mnemonicParsing="false" onAction="#Student" text="学生" />
+   </children>
+</AnchorPane>

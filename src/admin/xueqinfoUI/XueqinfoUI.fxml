@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="482.0" prefWidth="784.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admin.xueqinfoUI.XQController">
+   <children>
+      <ListView layoutX="35.0" layoutY="130.0" prefHeight="308.0" prefWidth="707.0" fx:id="xueqilist" />
+      <DatePicker fx:id="startdatecombo" layoutX="35.0" layoutY="48.0" prefHeight="30.0" prefWidth="137.0" promptText="开始时间" />
+      <DatePicker fx:id="enddatecombo" layoutX="210.0" layoutY="48.0" prefHeight="30.0" prefWidth="137.0" promptText="结束时间" />
+      <Label layoutX="181.0" layoutY="53.0" text="—" />
+      <ComboBox fx:id="oneortwo" layoutX="398.0" layoutY="48.0" prefHeight="30.0" prefWidth="69.0" />
+      <Label layoutX="370.0" layoutY="51.0" text="第">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="479.0" layoutY="53.0" text="学期">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Button fx:id="addbutton" layoutX="539.0" layoutY="44.0" mnemonicParsing="false" onAction="#Add" prefHeight="39.0" prefWidth="88.0" text="添加">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="refreshbutton" layoutX="652.0" layoutY="44.0" mnemonicParsing="false" onAction="#Refresh" prefHeight="39.0" prefWidth="88.0" text="刷新">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>
